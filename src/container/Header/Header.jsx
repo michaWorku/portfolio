@@ -27,12 +27,17 @@ const Header = () => {
             <span>👋</span>
             <div style={{marginLeft: 20}}>
               <p className="p-text">Hello, I am</p>
-              <h1 className="head-text">Mikias Worku</h1>
+              <h1 className="head-text">Mikias Worku </h1>
             </div>
           </div>
           <div className="tag-cmp app__flex">
               <p className="p-text">Fullstack Web Developer</p>
               <p className="p-text">Machine Learning Enthusiast</p>
+            </div>
+            <div className="tag-cmp app__flex">
+              <p className="p-text p-summary">A results driven, customer focused, articulate, 
+              and analytical Engineer with strong design and problem solving abilities
+               to produce high quality, user friendly, scalable, and bug-free products.</p>
             </div>
         </div>
       </motion.div>
