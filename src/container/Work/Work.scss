@@ -146,6 +146,22 @@
     }
   }
 
+  .tools{
+    flex-wrap: wrap;
+
+    .tool{
+      margin:0 1rem;
+    }
+
+    img {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      object-fit: cover;
+      background-color: #fff;
+    }
+  }
+ 
   .app__work-tag {
     position: absolute;
 

@@ -44,7 +44,7 @@
     align-items: flex-start;
     height: 100%;
   
-    margin: 0 2rem;
+    margin: 0 3rem;
   
     @media screen and (max-width: 1200px) {
       width: 100%;
@@ -72,7 +72,7 @@
   
     .tag-cmp {
       flex-direction: column;
-      margin-top: 3rem;
+      margin-top: 2rem;
   
       p {
         width: 100%;
@@ -174,24 +174,22 @@
     height: 100%;
   
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: relative;
+    justify-content: center;
+    align-items: center;
   
     img {
       width: 100%;
-      object-fit: contain;
+      object-fit: cover;
       z-index: 1;
     }
   
     .overlay_circle {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 0;
       width: 100%;
       height: 90%;
+      border-radius: 50%;
+      object-fit: cover;
+      background: var(--white-color);
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     }
   
     @media screen and (max-width: 1200px) {

@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
+import { images } from '../../constants'
 import './Work.scss';
 
 const Work = () => {
@@ -96,6 +97,28 @@ const Work = () => {
             <div className="app__work-content app__flex">
               <h4 className="bold-text">{work.title}</h4>
               <p className="p-text" style={{ marginTop: 10 }}>{work.description}</p>
+              {/* <motion.div
+                whileHover={{ opacity: [0, 1] }}
+                transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
+                className="app__work-hover app__flex tools"
+              >
+               
+                
+                    {
+                       [images.node, images.react, images.sass, images.mu5, images.javascript].map((tool) => (
+                        <motion.div
+                    whileInView={{ scale: [0, 1] }}
+                    whileHover={{ scale: [1, 0.90] }}
+                    transition={{ duration: 0.25 }}
+                    className="app__flex tools"
+                  >
+                       <img src={tool} alt={work.name} className="tool"/>
+                       </motion.div>
+                      ))
+                     }
+                  
+                  
+              </motion.div> */}
 
               <div className="app__work-tag app__flex">
                 <p className="p-text">{work.tags[0]}</p>

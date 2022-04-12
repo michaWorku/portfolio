@@ -29,12 +29,12 @@ const Skills = () => {
 
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
-          {skills.map((skill) => (
+          {skills.map((skill, index) => (
             <motion.div
               whileInView={{ opacity: [0, 1] }}
               transition={{ duration: 0.5 }}
               className="app__skills-item app__flex"
-              key={skill.name}
+              key={skill.name + index}
             >
               <div
                 className="app__flex"
@@ -56,8 +56,9 @@ const Skills = () => {
                 <p className="bold-text">{experience.year}</p>
               </div>
               <motion.div className="app__skills-exp-works">
-                {experience.works.map((work) => (
-                  <div  key={work.name}>
+                {experience.works.map((work, index) => (
+                  
+                  <div  key={index}>
                     <motion.div
                       whileInView={{ opacity: [0, 1] }}
                       transition={{ duration: 0.5 }}
@@ -67,16 +68,27 @@ const Skills = () => {
                      
                     >
                       <h4 className="bold-text">{work.name}</h4>
-                      <p className="p-text">{work.company}</p>
+                      <p className="p-text p-company">{work.company}</p>
+                      <ul >
+                        {
+                          work.desc.map((task, index)=>(<li key={index} className="p-text p-task">{task}</li>))
+                        }
+                        
+                      </ul>
                     </motion.div>
-                    <ReactTooltip
+                    {/* <ReactTooltip
                       id={work.name}
                       effect="solid"
                       arrowColor="#fff"
                       className="skills-tooltip"
                     >
-                      {work.desc}
-                    </ReactTooltip>
+                      <ul className="tag-cmp app__flex">
+                        {
+                          work.desc.map((task, index)=>(<li key={index} className="p-text">{task}</li>))
+                        }
+                        
+                      </ul>
+                    </ReactTooltip> */}
                   </div>
                 ))}
               </motion.div>

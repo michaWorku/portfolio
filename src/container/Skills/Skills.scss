@@ -5,7 +5,7 @@
 }
 
 .app__skills-container {
-  width: 80%;
+  width: 100%;
   margin-top: 3rem;
 
   display: flex;
@@ -50,6 +50,7 @@
     img {
       width: 50%;
       height: 50%;
+      background: #e4e4e4;
     }
 
     &:hover {
@@ -122,6 +123,17 @@
       color: var(--gray-color);
       margin-top: 5px;
     }
+
+    .p-company{
+      font-size: 0.8rem;
+      line-height: 1.8;
+      font-weight: 600;
+    }
+
+    .p-task{
+      margin-top: 5px;
+    }
+    
   }
 }
 
@@ -137,6 +149,7 @@
     margin-right: 1rem;
   }
 }
+
 
 .skills-tooltip {
   max-width: 300px !important;

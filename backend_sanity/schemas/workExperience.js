@@ -15,7 +15,14 @@ export default {
     {
       name: "desc",
       title: "Desc",
-      type: "string",
+      type: "array",
+      of: [
+        {
+          name: "task",
+          title: "Task",
+          type: "string",
+        },
+      ],
     },
   ],
 };
