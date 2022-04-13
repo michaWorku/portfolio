@@ -129,6 +129,11 @@
       color: var(--white-color);
     }
   }
+
+  @media screen and (max-width: 1024px) {
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 1;
+  }
 }
 
 .app__work-content {
