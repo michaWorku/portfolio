@@ -103,6 +103,8 @@
   margin: 1rem 0;
 }
 
+
+
 .app__skills-exp-works {
   flex: 1;
 
@@ -138,18 +140,25 @@
 }
 
 .app__skills-exp-year {
-  margin-right: 3rem;
-
+  margin-right: 1rem;
+  width: 25%;
   p {
     font-weight: 800;
     color: var(--secondary-color);
   }
 
   @media screen and (max-width: 450px) {
-    margin-right: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
   }
 }
 
+@media screen and (max-width: 450px) {
+  .app__skills-exp-item{
+    flex-direction: column;
+    margin: 1rem;
+  }
+}
 
 .skills-tooltip {
   max-width: 300px !important;
